@@ -1,0 +1,256 @@
+/*Main Document (root) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  main div {
+    font-size: 1.6rem;
+  }
+
+  a {
+    color: aliceblue;
+  }
+
+/*Body and general*/
+
+  body {
+  background-image: url("../background.jpg");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+
+}
+
+/*Menu*/
+.main-menu {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    background-color: black;
+
+}
+  .main-menu button {
+    display: inline-flex;
+    box-sizing: content-box;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.5em;
+  }
+
+.main-menu :hover{
+    color: yellow;
+    font-size: 1.8rem;
+  }
+
+
+/*Main Container*/
+
+  .main-container {
+
+    background-color: gray;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  #box-1,#box-3,#box-5 {
+    width: 100%;
+    height: 300px;
+  }
+  #box-2,#box-4 {
+    width: 100%;
+    height: 300px;
+
+  }
+  #box-1 {
+    background-image: url("../img/image1.jpg");
+  }
+
+  #box-2 {
+    background-image: url("../img/image2.jpg");
+  }
+  
+  #box-3 {
+    background-image: url("../img/image3.jpg");
+  }
+  
+  #box-4 {
+    background-image: url("../img/image4.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+  }
+
+#button-price:hover,
+#button-support:hover,
+#button-ideas:hover,
+#button-plans:hover,
+#button-contact:hover{
+    font-size: 1.9rem;
+    color: yellow;
+    font-weight: bold;
+  }
+
+
+/*First Section*/
+
+  .main-content {
+
+    margin-right: 2rem;
+    padding: 5% 7% 0% 5%;
+    width: 50%;
+    height: 100%;
+    background-color: #c2d2e9;
+  }
+
+ #button-price{
+
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #5e83ba;
+    margin-top: 3rem;
+    border-radius: 20px;
+    color: white;
+  }
+
+/*Second Section: Support*/
+
+  .content-support {
+
+      margin-right: 2rem;
+      padding: 10% 0% 0% 5%;
+      width: 50%;
+      height: 100%;
+    
+  }
+
+  #button-support{
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #5e83ba;
+    margin-top: 3rem;
+    border-radius: 20px;
+    color: white;
+  }
+
+/*Third Section: Ideas*/
+
+  .content-ideas {
+
+    margin-right: 2rem;
+    padding: 10% 0% 0% 5%;
+    width: 50%;
+    height: 100%;
+    color: white;
+  
+}
+
+#button-ideas{
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #5e83ba;
+  margin-top: 3rem;
+  border-radius: 20px;
+  color: white;
+}
+
+/*4th Section: Plans*/
+
+.content-plans {
+
+  margin-right: 1rem;
+  padding: 5% 5% 0% 5%;
+  width: 60%;
+  height: 100%;
+
+}
+
+#button-plans{
+font-size: 2rem;
+padding: 1rem;
+background-color: #5e83ba;
+margin-top: 2rem;
+border-radius: 20px;
+color: white;
+}
+
+/*Contact section*/
+
+.contact{
+  display: block;
+  margin-right: 1rem;
+  padding: 5% 0% 0% 5%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-image: url("../img/support.jpg");
+  background-position: 0%;
+  background-repeat: no-repeat;
+
+}
+
+#button-contact{
+font-size: 2rem;
+padding: 1rem;
+background-color: #5e83ba;
+margin-top: 2rem;
+border-radius: 20px;
+color: white;
+}
+
+/*Footer*/
+
+    footer {
+      font-family:Arial, Helvetica, sans-serif;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      font-size: 2rem;
+      padding: 1rem;
+      max-width: max-content;
+      margin-left: 30%;
+    }
+
+
+  @media (min-width: 600px) {
+    .main-menu {
+      box-sizing: border-box;
+      font-variant: small-caps;
+    }
+    #box-2 {
+      width: 50%;
+    }
+    #box-3 {
+      width: 50%;
+    }
+    #box-4 {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .main-container {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #box-2 {
+      width: 50%;
+    }
+    #box-3 {
+      width: 50%;
+    }
+    #box-4 {
+      width: 100%;
+    }
+  }
